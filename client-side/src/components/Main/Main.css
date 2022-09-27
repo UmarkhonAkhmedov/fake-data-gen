@@ -1,0 +1,15 @@
+.main {
+  padding: 20px 0;
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}

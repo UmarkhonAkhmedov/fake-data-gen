@@ -3,6 +3,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import "../Main/Main.css";
 
 function Region({ region, setRegion, fetchData }) {
   const handleChange = (event) => {
@@ -10,7 +11,7 @@ function Region({ region, setRegion, fetchData }) {
   };
 
   return (
-    <FormControl sx={{ width: "200px" }}>
+    <FormControl className="region__container">
       <InputLabel id="demo-simple-select-label">Select Region</InputLabel>
       <Select
         labelId="demo-simple-select-label"

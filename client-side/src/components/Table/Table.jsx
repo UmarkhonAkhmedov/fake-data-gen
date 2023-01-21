@@ -7,6 +7,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import "../Main/Main.css";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -29,7 +30,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function UserTable({ data }) {
   return (
-    <TableContainer component={Paper} sx={{ maxWidth: "100%" }}>
+    <TableContainer component={Paper} className="table__container">
       <Table aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -42,7 +43,7 @@ export default function UserTable({ data }) {
         </TableHead>
         <TableBody>
           {data.map((item, index) => (
-            <StyledTableRow key={index}>
+            <StyledTableRow key={index} className="table__row">
               <StyledTableCell align="center">{index + 1}</StyledTableCell>
               <StyledTableCell align="center">{item.id.value}</StyledTableCell>
               <StyledTableCell align="center">
